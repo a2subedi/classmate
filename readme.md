@@ -1,7 +1,9 @@
 ## college project
 
 API endpoints
-/notice/api/ --> for listing notices
-/notice/api/1 --> get details of notice with id=1
-/groups/api/ --> for listing groups
-/groups/api/1 --> get group details with id=1
+<ol>
+<li>/notice/api/ --> for listing notices </li>
+<li>/notice/api/1 --> get details of notice with id=1</li>
+<li>/groups/api/ --> for listing groups</li>
+<li>/groups/api/1 --> get group details with id=1</li>
+</ol>
