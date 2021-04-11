@@ -2,7 +2,7 @@ from rest_framework import generics
 from .models import Notice
 from .serializers import NoticeSerializer
 
-class NoticeListView(generics.ListAPIView):
+class NoticeListView(generics.ListCreateAPIView):
     queryset = Notice.objects.all()
     serializer_class = NoticeSerializer
 
