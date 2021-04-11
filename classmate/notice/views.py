@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import Notice
+from .serializers import NoticeSerializer
 
-# Create your views here.
+class NoticeListView(generics.ListAPIView):
+    queryset = Notice.objects.all()
+    serializer_class = NoticeSerializer
+
+class NoticeDetailView(generics.RetrieveAPIView):
+    queryset = Notice.objects.all()
+    serializer_class = NoticeSerializer
