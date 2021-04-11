@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from group.models import Group
 
+notice_choices = (('urgent', 'urgent'),
+                  ('not urgent', 'not urgent'))
 
 class Notice(models.Model):
     title = models.CharField(max_length=250)
