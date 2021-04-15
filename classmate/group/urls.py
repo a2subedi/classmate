@@ -1,7 +1,11 @@
-from django.urls import path
-from .views import GroupListView, GroupDetailView
+from django.urls import path,include
+from .views import GroupListView
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register('', GroupListView)
 
 urlpatterns = [
-    path('api/', GroupListView.as_view()),
-    path('api/details/<int:pk>/', GroupDetailView.as_view()),
+    path('',include(router.urls)),
+    # path('api/details/<int:pk>/', NoticeDetailView.as_view()),
 ]

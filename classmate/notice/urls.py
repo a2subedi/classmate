@@ -1,12 +1,12 @@
 from django.urls import path,include
 from .models import Notice
-from .views import NoticeListView, NoticeDetailView
+from .views import NoticeListView
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('notices', NoticeListView)
+router.register('', NoticeListView)
 
 urlpatterns = [
     path('',include(router.urls)),
-    path('api/details/<int:pk>/', NoticeDetailView.as_view()),
+    # path('api/details/<int:pk>/', NoticeDetailView.as_view()),
 ]

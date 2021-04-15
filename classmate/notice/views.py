@@ -6,6 +6,6 @@ class NoticeListView(viewsets.ModelViewSet):
     queryset = Notice.objects.all()
     serializer_class = NoticeSerializer
 
-class NoticeDetailView(generics.RetrieveAPIView):
-    queryset = Notice.objects.all()
-    serializer_class = NoticeSerializer
+# class NoticeDetailView(generics.RetrieveAPIView):
+#     queryset = Notice.objects.all()
+#     serializer_class = NoticeSerializer
