@@ -4,7 +4,7 @@ from .views import UserListView
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('', UserListView)
+router.register('users', UserListView)
 
 urlpatterns = [
     path('',include(router.urls)),
