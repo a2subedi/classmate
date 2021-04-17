@@ -11,3 +11,5 @@ class GroupListView(viewsets.ModelViewSet):
 #     queryset = Group.objects.all()
 #     serializer_class = GroupSerializer
     
+def join_group(request):
+    pass
