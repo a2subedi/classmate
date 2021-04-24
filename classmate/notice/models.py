@@ -16,3 +16,10 @@ class Notice(models.Model):
 
     def __str__(self):
         return self.title
+
+class FavouriteNotice(models.Model):
+    notice = models.ForeignKey(Notice, on_delete=models.CASCADE)
+    user_ids = models.ManyToManyField(User)
+
+    def __str__(self):
+        return self.notice.title

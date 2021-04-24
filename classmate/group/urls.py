@@ -8,5 +8,6 @@ router.register('', GroupListView)
 urlpatterns = [
     path('',include(router.urls)),
     # path('api/details/<int:pk>/', NoticeDetailView.as_view()),
-    path('/api/join-group/', join_group)
+    # path('core/join-group/', JoinGroup.as_view())
+    path('core/join-group/', join_group)
 ]
